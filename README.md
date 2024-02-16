@@ -1,3 +1,27 @@
+---
+title: DeepMoji Text Sentiment
+emoji: 🎭
+colorFrom: yellow
+colorTo: blue
+sdk: gradio
+sdk_version: 4.16.0
+suggested_hardware: cpu-basic
+python_version: 3.10
+models:
+  - Pendrokar/TorchMoji
+app_file: app.py
+tags:
+  - text-sentiment
+  - emotion
+  - sentiment
+  - emoji
+  - emoticon
+pinned: true
+preload_from_hub:
+  - Pendrokar/TorchMoji
+license: mit
+---
+
 ### ------ Update September 2018 ------
 It's been a year since TorchMoji and DeepMoji were released. We're trying to understand how it's being used such that we can make improvements and design better models in the future. 
 

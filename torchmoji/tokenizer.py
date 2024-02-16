@@ -34,9 +34,14 @@ TITLES = [
     r'Mrs\.',
     r'Dr\.',
     r'Prof\.',
-    ]
+    r'mr\.',
+    r'ms\.',
+    r'mrs\.',
+    r'dr\.',
+    r'prof\.',
+]
 # Ensure case insensitivity
-RE_TITLES = r'|'.join([r'(?i)' + t for t in TITLES])
+RE_TITLES = r'|'.join([r'' + t for t in TITLES])
 
 # Symbols have to be created as separate patterns in order to match consecutive
 # identical symbols.
@@ -136,7 +141,8 @@ IGNORED = [
     ]
 
 # Final pattern
-RE_PATTERN = re.compile(r'|'.join(IGNORED) + r'|(' + r'|'.join(TOKENS) + r')',
+
+RE_PATTERN = re.compile(r'|'.join(IGNORED) + r'|\(' + r'|'.join(TOKENS) + r'\)',
                         re.UNICODE)
 
 
